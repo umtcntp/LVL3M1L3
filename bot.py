@@ -35,4 +35,9 @@ async def ban_error(ctx, error):
     elif isinstance(error, commands.MemberNotFound):
         await ctx.send("Kullanıcı bulunamadı!")
 
+
+@bot.command()
+async def hello(ctx):
+    await ctx.send("Merhaba!")
+
 bot.run(token)
